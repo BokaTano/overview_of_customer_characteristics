@@ -1,15 +1,17 @@
-# Customer Insights for 100 DAYS BOOST 
+## This is a project without the necessary csv's. You can make your own data to work with this project though or use it as d3.js and Angular inspiration. To see the final result, watch the final_video.mov.
 
-## How to add new Clustering Method
+### Customer Insights for 100 DAYS BOOST 
 
-### Prerequisites 
+#### How to add new Clustering Method
+
+##### Prerequisites 
 1. Angular: https://angular.io/guide/quickstart
 2. Jupyter Notebook: https://jupyter.readthedocs.io/en/latest/install.html
 3. DataGrip: https://www.jetbrains.com/datagrip/
 4. An Code IDE like WebStorm: https://www.jetbrains.com/webstorm/
 
 
-### Format Data with Python
+##### Format Data with Python
 
 To not overload the connection from database to website, you try to have only the necessary data in the database and seperate it in smaller tables for overview. For this you can use the Python scripts which are included in the Python Scripts Folder
 
@@ -31,7 +33,7 @@ You can do this via the 'getting the averages data'-python script. Here you have
 
 
 
-### Import the data in the database on MartinBox via Datagraip
+##### Import the data in the database on MartinBox via Datagraip
 
 
 1. Add a Datasource witch following credentials:  
@@ -59,7 +61,7 @@ You can do this via the 'getting the averages data'-python script. Here you have
 3. Find your table in the file hirarchy on the left and right click it. Select _import from file_ and select your file. Here check if _Comma-Seperated_ is selected as same as _First row is header_. Check the Preview and click _OK_.
 
 
-### Edit the Flask Application 
+##### Edit the Flask Application 
 
 1. Mailing Martin Rohrmeier to get access to the Martin Box
 
@@ -105,7 +107,7 @@ You can do this via the 'getting the averages data'-python script. Here you have
 
 
 
-## First steps with the angular project
+#### First steps with the angular project
 
 This project is created with the angular framework and includes the d3.js and bootstrap. In this Documentation it is not explained how to use those three, but here are some helpful links:
 
@@ -122,11 +124,11 @@ This project is created with the angular framework and includes the d3.js and bo
 
 From here on you can use the angular cli in the terminal, e.g to run the project in a browser with `ng serve`. Please refer to Angular Documenation for more Info.
 
-### Structure of Angular Project
+##### Structure of Angular Project
 
 It is a very simple project structure. There are 6 components. The landing component which includes all the other 5 graph-components and one service. The *main-data.service* has all methods to connect to the flask application, so the database and to format the received data in a usable format. 
 
-### Make the Changes in the Angular Project
+##### Make the Changes in the Angular Project
 
 1. To receive the data in the angular project, you need to create a method for method you created in the flask app in the *main-data.service.ts* like following: 
 ```TypeScript
@@ -150,7 +152,7 @@ It is a very simple project structure. There are 6 components. The landing compo
     2. Add a `false` to the array `buttonActivity = [true, false];`
 
 
-### How to Generate a new Graph Component
+##### How to Generate a new Graph Component
 
 1. You generate an empty component via the angular cli in the terminal with following command `ng g c` + *component name*.
 
